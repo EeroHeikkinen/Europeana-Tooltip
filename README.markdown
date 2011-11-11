@@ -1,4 +1,4 @@
-# Europeana Tooltip
+ï»¿# Europeana Tooltip
 
 ##Overview
 A simple yet highly customizable jQuery plugin that allows you to enrich your site with content from Europeana.
@@ -48,8 +48,8 @@ The client-side component utilizes the JSON from the server-side component. It r
 
 ##Options
     var settings = {
-        service: ”localhost:8080/europeana_hackathon/",
-        thumbnailSize: ”50",
+        service: "localhost:8080/europeana_hackathon/",
+        thumbnailSize: "50",
         precache: true,
         template: "defaultTemplate",
     };
