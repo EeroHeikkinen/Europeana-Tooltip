@@ -1,0 +1,1152 @@
+.wowhead-tooltip {
+	visibility: hidden;
+	z-index: 100000006;
+	overflow: visible !important;
+}
+
+.wowhead-tooltip a {
+	text-decoration: none;
+}
+
+.wowhead-tooltip a:hover {
+	text-decoration: underline;
+}
+
+.wowhead-tooltip table {
+	border-spacing: 0;
+	border-collapse: collapse;
+	margin: 0;
+	width: auto;
+}
+
+.wowhead-tooltip table,.wowhead-tooltip td,.wowhead-tooltip th,.wowhead-tooltip tbody
+	{
+	border: 0 !important;
+}
+
+.wowhead-tooltip td table td table {
+	width: 100%;
+}
+
+.wowhead-tooltip td,.wowhead-tooltip th {
+	background: url(tooltip.png);
+	font-family: Verdana, sans-serif;
+	font-size: 12px;
+	line-height: 17px;
+	color: white;
+}
+
+.wowhead-tooltip th {
+	padding: 3px;
+	vertical-align: top;
+}
+
+.wowhead-tooltip td {
+	padding: 8px 4px 1px 9px;
+	text-align: left;
+	vertical-align: top;
+}
+
+.wowhead-tooltip b {
+	font-size: 14px;
+	line-height: 19px;
+	font-weight: normal;
+}
+
+.wowhead-tooltip div.indent {
+	padding-left: .6em;
+}
+
+.wowhead-tooltip td th,.wowhead-tooltip td td {
+	background: none;
+}
+
+.wowhead-tooltip td th {
+	padding: 0 0 0 4em;
+	text-align: right;
+	font-weight: normal;
+}
+
+.wowhead-tooltip td td {
+	padding: 0;
+	text-align: left;
+}
+
+.wowhead-tooltip .thumbnail {
+	position: absolute;
+	left: -44px;
+	top: -1px;
+	width: 44px;
+	height: 44px;
+	background: 4px 4px no-repeat;
+	margin: 0;
+	padding: 0;
+}
+
+.thumbnail div {
+	width: 44px;
+	height: 44px;
+	background-image:
+		url(default.png);
+}
+
+.wowhead-tooltip table.shrink b {
+	font-size: 12px;
+	line-height: 15px;
+}
+
+.wowhead-tooltip table.shrink td,.wowhead-tooltip table.shrink th {
+	font-size: 10px;
+	line-height: 14px;
+}
+
+.wowhead-tooltip .mapper {
+	margin: 2px 0 3px 1px;
+	border: none;
+}
+
+.wowhead-tooltip ins {
+	color: #5DF644;
+	text-decoration: none;
+	border-bottom: 1px dotted;
+}
+
+.wowhead-tooltip del {
+	color: #FF8040;
+	text-decoration: none;
+	border-bottom: 1px dotted;
+}
+
+.wowhead-tooltip-powered {
+	background: url(powered.png) no-repeat;
+	width: 53px;
+	height: 33px;
+	position: absolute;
+	right: -56px;
+	top: 2px;
+	display: none;
+}
+
+.moneyitem,.moneygold,.moneysilver,.moneycopper,.moneyachievement,.moneysocketmeta,.moneysocketred,.moneysocketyellow,.moneysocketblue,.moneysocketprismatic
+	{
+	background: no-repeat right center;
+	color: white;
+}
+
+.moneyitem {
+	padding-right: 18px;
+}
+
+.moneygold {
+	padding-right: 15px;
+	background-image: url(money-gold.gif);
+}
+
+.moneysilver {
+	padding-right: 15px;
+	background-image:
+		url(//static.wowhead.com/images/icons/money-silver.gif);
+}
+
+.moneycopper {
+	padding-right: 15px;
+	background-image:
+		url(//static.wowhead.com/images/icons/money-copper.gif);
+}
+
+.moneyachievement {
+	padding-right: 13px;
+	background-image: url(//static.wowhead.com/images/icons/achievement.gif);
+}
+
+.moneysocketmeta {
+	padding-right: 18px;
+	background-image: url(socket-meta.gif);
+}
+
+.moneysocketred {
+	padding-right: 18px;
+	background-image: url(//static.wowhead.com/images/icons/socket-red.gif);
+}
+
+.moneysocketyellow {
+	padding-right: 18px;
+	background-image:
+		url(socket-yellow.gif);
+}
+
+.moneysocketblue {
+	padding-right: 18px;
+	background-image: url(socket-blue.gif);
+}
+
+.moneysocketprismatic {
+	padding-right: 18px;
+	background-image:
+		url(//static.wowhead.com/images/icons/socket-prismatic.gif);
+}
+
+a.moneyitem,a.moneysocketmeta,a.moneysocketred,a.moneysocketyellow,a.moneysocketblue,a.moneysocketprismatic,a.moneyachievement
+	{
+	text-decoration: none !important;
+	border-bottom: 1px solid transparent;
+	color: white !important;
+}
+
+a.moneyitem:hover,a.moneysocketmeta:hover,a.moneysocketred:hover,a.moneysocketyellow:hover,a.moneysocketblue:hover,a.moneysocketprismatic:hover,a.moneyachievement:hover
+	{
+	border-bottom: 1px solid white;
+}
+
+a span.moneyitem,a span.moneysocketmeta,a span.moneysocketred,a span.moneysocketyellow,a span.moneysocketblue,a span.moneysocketprismatic,a span.moneyachievement
+	{
+	color: white;
+}
+
+.blizzard-blue {
+	color: #00C0FF !important;
+}
+
+.q,.q a,.color-q {
+	color: #ffd100 !important;
+}
+
+.q0,.q0 a,.color-q0 {
+	color: #9d9d9d !important;
+}
+
+.q1,.q1 a,.color-q1 {
+	color: #fff !important;
+}
+
+.q2,.q2 a,.color-q2 {
+	color: #1eff00 !important;
+}
+
+.q3,.q3 a,.color-q3 {
+	color: #0070dd !important;
+}
+
+.q4,.q4 a,.color-q4 {
+	color: #a335ee !important;
+}
+
+.q5,.q5 a,.color-q5 {
+	color: #ff8000 !important;
+}
+
+.q6,.q6 a,.color-q6 {
+	color: #e5cc80 !important;
+}
+
+.q7,.q7 a,.color-q7 {
+	color: #e5cc80 !important;
+}
+
+.q8,.q8 a,.color-q8 {
+	color: #ffff98 !important;
+}
+
+.q9,.q9 a,.color-q9 {
+	color: #71d5ff !important;
+}
+
+.q10,.q10 a,.color-q10 {
+	color: #ff4040 !important;
+}
+
+.r1 {
+	color: #FF8040 !important;
+}
+
+.r2 {
+	color: #FF0 !important;
+}
+
+.r3 {
+	color: #40BF40 !important;
+}
+
+.r4 {
+	color: #808080 !important;
+}
+
+.c1,.c1 a {
+	color: #C69B6D !important;
+}
+
+.c2,.c2 a {
+	color: #F48CBA !important;
+}
+
+.c3,.c3 a {
+	color: #AAD372 !important;
+}
+
+.c4,.c4 a {
+	color: #FFF468 !important;
+}
+
+.c5,.c5 a {
+	color: #FFF !important;
+}
+
+.c6,.c6 a {
+	color: #C41E3B !important;
+}
+
+.c7,.c7 a {
+	color: #2359FF !important;
+}
+
+.c8,.c8 a {
+	color: #68CCEF !important;
+}
+
+.c9,.c9 a {
+	color: #9382C9 !important;
+}
+
+.c11,.c11 a {
+	color: #FF7C0A !important;
+}
+
+.gem1 {
+	color: #9D9D9D !important;
+}
+
+.gem2 {
+	color: #e60c0b !important;
+}
+
+.gem4 {
+	color: #ffff35 !important;
+}
+
+.gem6 {
+	color: #f48905 !important;
+}
+
+.gem8 {
+	color: #295df1 !important;
+}
+
+.gem10 {
+	color: #b957fc !important;
+}
+
+.gem12 {
+	color: #22c516 !important;
+}
+
+.gem14 {
+	color: #FFF !important;
+}
+
+.s1 {
+	color: #ff3f40 !important;
+}
+
+.s2 {
+	color: #fffb9f !important;
+}
+
+.s3 {
+	color: #ffb2eb !important;
+}
+
+.socket-meta {
+	padding-left: 26px;
+	background: url(socket-meta.gif)
+		no-repeat left center;
+}
+
+.socket-red {
+	padding-left: 26px;
+	background: url(//static.wowhead.com/images/icons/socket-red.gif)
+		no-repeat left center;
+}
+
+.socket-yellow {
+	padding-left: 26px;
+	background: url(socket-yellow.gif)
+		no-repeat left center;
+}
+
+.subject {
+	padding-left: 26px;
+}
+
+.socket-blue {
+	padding-left: 26px;
+	background: url(//static.wowhead.com/images/icons/socket-blue.gif)
+		no-repeat left center;
+}
+
+.socket-prismatic {
+	padding-left: 26px;
+	background: url(//static.wowhead.com/images/icons/socket-prismatic.gif)
+		no-repeat left center;
+}
+
+.socket-hydraulic {
+	padding-left: 26px;
+	background: url(//static.wowhead.com/images/icons/socket-hydraulic.gif)
+		no-repeat left center;
+}
+
+.socket-cogwheel {
+	padding-left: 26px;
+	background: url(//static.wowhead.com/images/icons/socket-cogwheel.gif)
+		no-repeat left center;
+}
+
+.wowhead-newsfeed {
+	background: #242424;
+	border: 0;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-box-shadow: 0 1px 1px #202020;
+	-webkit-box-shadow: 0 1px 1px #202020;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #f0f0f0;
+	padding: 10px;
+	width: 280px;
+	overflow: hidden;
+	position: relative;
+}
+
+.wowhead-newsfeed .wowhead-header {
+	margin: 0 0 10px;
+}
+
+.wowhead-newsfeed .wowhead-header a {
+	color: #fff !important;
+	padding: 0 0 0 21px;
+	background: url(//static.wowhead.com/images/logos/favicon.png) 0 1px
+		no-repeat !important;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.wowhead-newsfeed .wowhead-cont {
+	padding: 10px;
+	background: #141414;
+	-moz-box-shadow: 0 1px 1px #333 inset;
+	-webkit-box-shadow: 0 1px 1px #333 inset;
+	border: 1px solid #444;
+	margin: 0;
+}
+
+.wowhead-newsfeed .wowhead-cont a {
+	border: 0 !important;
+	color: #ffd100;
+	text-decoration: underline;
+	display: block;
+	padding: 5px 0;
+	outline: 0;
+	font: normal normal normal 13px/normal Arial, Helvetica, sans-serif;
+}
+
+.wowhead-newsfeed .wowhead-cont a:hover {
+	color: #fff;
+}
+
+.wowhead-newsfeed .wowhead-cont a:first-child {
+	background: none !important;
+}
+
+#wowhead-bluetip {
+	position: absolute;
+	z-index: 99999;
+	color: #fff;
+	font-size: 11px;
+	text-align: center;
+	padding: 6px 8px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	background: rgba(0, 0, 0, 0.8);
+	text-align: left;
+	max-width: 300px;
+}
+
+.wowhead-bluetracker {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.wowhead-bluetracker h3 {
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0 0 10px 0;
+}
+
+.wowhead-bluetracker h5 {
+	font-style: italic;
+	font-size: 11px;
+}
+
+.wowhead-bluetracker a {
+	font-weight: bold;
+	font-style: normal;
+	font-size: 11px;
+}
+
+.wowhead-bluetracker-v {
+	padding: 10px;
+}
+
+.wowhead-bluetracker-h {
+	height: 18px;
+	padding: 5px 10px;
+	overflow: hidden;
+	position: relative;
+}
+
+.wowhead-bluetracker-v div {
+	width: 55px;
+	height: 55px;
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+.wowhead-bluetracker-v div a {
+	display: block;
+	width: 55px;
+	height: 55px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	background-position: center center;
+	background-repeat: no-repeat;
+	text-decoration: none !important;
+}
+
+.wowhead-bluetracker-v ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 10px;
+}
+
+.wowhead-bluetracker-v li {
+	padding: 0 0 10px 0;
+	margin: 0 0 10px 0;
+	line-height: 1em;
+	overflow: hidden;
+}
+
+.wowhead-bluetracker-v a {
+	text-decoration: none;
+}
+
+.wowhead-bluetracker-v h3 a {
+	font-size: 16px;
+	padding: 0 0 0 21px;
+	background: url(//static.wowhead.com/images/logos/favicon.png) 0 1px
+		no-repeat !important;
+}
+
+.wowhead-bluetracker-v h4 {
+	margin: 0 0 7px 0;
+}
+
+.wowhead-bluetracker-v h4 a {
+	font-style: normal;
+	font-size: 12px !important;
+}
+
+.wowhead-bluetracker-v h5 {
+	margin: 0 0 7px 0;
+}
+
+.wowhead-bluetracker-v em {
+	padding-left: 18px;
+	background-repeat: no-repeat;
+	background-position: 0 2px;
+	font-style: italic;
+	font-size: 11px;
+}
+
+.wowhead-bluetracker-v li.last {
+	margin: 0;
+	padding: 0;
+	border: none !important;
+}
+
+.wowhead-bluetracker-v li.last a {
+	text-decoration: none;
+	font-size: 11px;
+	padding-left: 14px;
+	line-height: 16px;
+	background:
+		url(//static.wowhead.com/images/icons/arrow-right-bullet.png)
+		no-repeat 0 center;
+}
+
+.wowhead-bluetracker-h div {
+	position: absolute;
+	top: 6px;
+	left: 8px;
+	width: 11px;
+	height: 15px;
+}
+
+.wowhead-bluetracker-h div a {
+	background: url(//static.wowhead.com/images/ui/misc/arrows.png)
+		no-repeat;
+	display: block;
+	position: absolute;
+	width: 11px;
+	height: 7px;
+}
+
+.wowhead-bluetracker-h ul {
+	list-style-type: none;
+	margin: 0 0 0 12px;
+	padding: 0;
+}
+
+.wowhead-bluetracker-h li {
+	padding: 0;
+	margin: 0;
+	line-height: 15px;
+	display: none;
+	clear: both;
+	overflow: hidden;
+}
+
+.wowhead-bluetracker-h h5 {
+	margin: 0;
+	float: right;
+}
+
+.wowhead-bluetracker-h hr {
+	margin: 0 0 10px 0;
+}
+
+.wowhead-bluetracker-h .full {
+	margin: 7px 0 0 0;
+	text-align: right;
+	font-size: 11px !important;
+	font-weight: bold !important;
+}
+
+.wowhead-bluetracker-h a.up {
+	top: 0;
+	left: 0;
+}
+
+.wowhead-bluetracker-h a:hover.up {
+	background-position: -11px 0;
+}
+
+.wowhead-bluetracker-h a.down {
+	top: 8px;
+	left: 0;
+	background-position: 0 -8px;
+}
+
+.wowhead-bluetracker-h a:hover.down {
+	background-position: -11px -8px;
+}
+
+.wowhead-bluetracker-light {
+	background: #f0f0f0;
+	-moz-box-shadow: 0 1px 1px #999;
+	-webkit-box-shadow: 0 1px 1px #999;
+	color: #141414;
+}
+
+.wowhead-bluetracker-light a {
+	color: #026;
+}
+
+.wowhead-bluetracker-light h5 {
+	color: #666;
+}
+
+.wowhead-bluetracker-dark {
+	background: #242424;
+	-moz-box-shadow: 0 1px 1px #202020;
+	-webkit-box-shadow: 0 1px 1px #202020;
+	color: #f0f0f0;
+}
+
+.wowhead-bluetracker-dark a {
+	color: #ffd100;
+}
+
+.wowhead-bluetracker-dark h5 {
+	color: #aaa;
+}
+
+.wowhead-bluetracker-v.wowhead-bluetracker-light div a {
+	background-color: #ccc;
+}
+
+.wowhead-bluetracker-v.wowhead-bluetracker-light em {
+	color: #666;
+}
+
+.wowhead-bluetracker-v.wowhead-bluetracker-light ul {
+	background: #fff;
+	-moz-box-shadow: 0 1px 1px #ccc inset;
+	-webkit-box-shadow: 0 1px 1px #ccc inset;
+	border: solid 1px #bbb;
+}
+
+.wowhead-bluetracker-v.wowhead-bluetracker-light li {
+	border-bottom: solid 1px #ccc;
+}
+
+.wowhead-bluetracker-v.wowhead-bluetracker-light h3 a {
+	color: #141414;
+}
+
+.wowhead-bluetracker-v.wowhead-bluetracker-dark div a {
+	background-color: #ccc;
+}
+
+.wowhead-bluetracker-v.wowhead-bluetracker-dark a {
+	color: #ffd100;
+}
+
+.wowhead-bluetracker-v.wowhead-bluetracker-dark em {
+	color: #aaa;
+}
+
+.wowhead-bluetracker-v.wowhead-bluetracker-dark ul {
+	background: #141414;
+	-moz-box-shadow: 0 1px 1px #333 inset;
+	-webkit-box-shadow: 0 1px 1px #333 inset;
+	border: solid 1px #444;
+}
+
+.wowhead-bluetracker-v.wowhead-bluetracker-dark li {
+	border-bottom: solid 1px #333;
+}
+
+.wowhead-bluetracker-v.wowhead-bluetracker-dark h3 a {
+	color: #f0f0f0;
+}
+
+.wowhead-guildrecruitment {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	font-size: 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.wowhead-guildrecruitment h3 {
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0 0 10px 0;
+	padding: 0 0 0 21px;
+	background: url(//static.wowhead.com/images/logos/favicon.png) 0 1px
+		no-repeat !important;
+}
+
+.wowhead-guildrecruitment h3 a {
+	text-decoration: none;
+}
+
+.wowhead-guildrecruitment h4 {
+	font-size: 12px;
+	margin: 0;
+}
+
+.wowhead-guildrecruitment h4 a {
+	text-decoration: none;
+	line-height: 14px;
+	font-size: 11px;
+	overflow: hidden;
+}
+
+.wowhead-guildrecruitment h5 {
+	font-style: italic;
+	font-size: 11px;
+}
+
+.wowhead-guildrecruitment div {
+	float: left;
+	position: relative;
+	z-index: 0;
+	height: 18px;
+	width: 18px;
+	margin: 6px 3px 0 0;
+	line-height: 0;
+}
+
+.wowhead-guildrecruitment ins {
+	height: 18px;
+	width: 18px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	display: block;
+	position: absolute;
+	z-index: 5;
+	line-height: 0;
+	left: 0;
+	top: 0;
+}
+
+.wowhead-guildrecruitment ins.a {
+	background-image:
+		url(//static.wowhead.com/images/wow/icons/small/inv_bannerpvp_02.jpg);
+}
+
+.wowhead-guildrecruitment ins.h {
+	background-image:
+		url(//static.wowhead.com/images/wow/icons/small/inv_bannerpvp_01.jpg);
+}
+
+.wowhead-guildrecruitment span {
+	font-weight: bold !important;
+	padding: 0 5px 0 0;
+	font-size: 12px;
+}
+
+.wowhead-guildrecruitment .ally {
+	color: #0045d1 !important;
+}
+
+.wowhead-guildrecruitment .horde {
+	color: #cb0808 !important;
+}
+
+.wowhead-guildrecruitment hr {
+	margin: 0 0 10px 0;
+}
+
+.wowhead-guildrecruitment li.last {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.wowhead-guildrecruitment-v {
+	padding: 10px;
+}
+
+.wowhead-guildrecruitment-h {
+	padding: 5px 10px;
+	overflow: hidden;
+	position: relative;
+	height: 18px;
+}
+
+.wowhead-guildrecruitment-v ul {
+	padding: 10px;
+	list-style-type: none;
+	margin: 0;
+}
+
+.wowhead-guildrecruitment-v li {
+	padding: 0 0 10px;
+	margin: 0 0 10px 0;
+	line-height: 1.4em;
+}
+
+.wowhead-guildrecruitment-v h5 {
+	margin: 0 0 7px 0;
+}
+
+.wowhead-guildrecruitment-v var {
+	font-style: normal;
+}
+
+.wowhead-guildrecruitment-v li.last a {
+	display: block;
+	text-decoration: none;
+	font-size: 11px;
+	padding-left: 18px;
+	height: 16px;
+	line-height: 16px;
+	background: url(//static.wowhead.com/images/icons/add.png) no-repeat 0
+		center;
+}
+
+.wowhead-guildrecruitment-h ul {
+	padding: 0;
+	list-style-type: none;
+	margin: 0 0 0 12px;
+}
+
+.wowhead-guildrecruitment-h li {
+	padding: 0;
+	margin: 0;
+	line-height: 15px;
+	display: none;
+	clear: both;
+	overflow: hidden;
+}
+
+.wowhead-guildrecruitment-h h4 {
+	height: 18px;
+	line-height: 18px;
+}
+
+.wowhead-guildrecruitment-h h5 {
+	margin: 0;
+	float: right;
+}
+
+.wowhead-guildrecruitment-h div {
+	margin-top: 0;
+}
+
+.wowhead-guildrecruitment-h li.title a {
+	font-weight: bold;
+	font-style: normal;
+}
+
+.wowhead-guildrecruitment-h div.cycle {
+	position: absolute;
+	top: 6px;
+	left: 8px;
+	width: 11px;
+	height: 15px;
+}
+
+.wowhead-guildrecruitment-h div a {
+	background: url(//static.wowhead.com/images/ui/misc/arrows.png)
+		no-repeat;
+	display: block;
+	position: absolute;
+	width: 11px;
+	height: 7px;
+}
+
+.wowhead-guildrecruitment-h a.up {
+	top: 0;
+	left: 0;
+}
+
+.wowhead-guildrecruitment-h a:hover.up {
+	background-position: -11px 0;
+}
+
+.wowhead-guildrecruitment-h a.down {
+	top: 8px;
+	left: 0;
+	background-position: 0 -8px;
+}
+
+.wowhead-guildrecruitment-h a:hover.down {
+	background-position: -11px -8px;
+}
+
+.wowhead-guildrecruitment-light {
+	background: #f0f0f0;
+	-moz-box-shadow: 0 1px 1px #999;
+	-webkit-box-shadow: 0 1px 1px #999;
+	color: #141414;
+}
+
+.wowhead-guildrecruitment-light a {
+	color: #026;
+}
+
+.wowhead-guildrecruitment-light h4 a {
+	color: #666;
+}
+
+.wowhead-guildrecruitment-light h5 {
+	color: #666;
+}
+
+.wowhead-guildrecruitment-dark {
+	background: #242424;
+	-moz-box-shadow: 0 1px 1px #202020;
+	-webkit-box-shadow: 0 1px 1px #202020;
+	color: #f0f0f0;
+}
+
+.wowhead-guildrecruitment-dark a {
+	color: #ffd100;
+}
+
+.wowhead-guildrecruitment-dark h4 a {
+	color: #aaa;
+}
+
+.wowhead-guildrecruitment-dark h5 {
+	color: #aaa;
+}
+
+.wowhead-guildrecruitment-v.wowhead-guildrecruitment-light h3 a {
+	color: #141414;
+}
+
+.wowhead-guildrecruitment-v.wowhead-guildrecruitment-light ul {
+	background: #fff;
+	-moz-box-shadow: 0 1px 1px #ccc inset;
+	-webkit-box-shadow: 0 1px 1px #ccc inset;
+	border: solid 1px #bbb;
+}
+
+.wowhead-guildrecruitment-v.wowhead-guildrecruitment-light li {
+	border-bottom: solid 1px #ccc;
+}
+
+.wowhead-guildrecruitment-v.wowhead-guildrecruitment-dark h3 a {
+	color: #f0f0f0;
+}
+
+.wowhead-guildrecruitment-v.wowhead-guildrecruitment-dark ul {
+	background: #141414;
+	-moz-box-shadow: 0 1px 1px #333 inset;
+	-webkit-box-shadow: 0 1px 1px #333 inset;
+	border: solid 1px #444;
+}
+
+.wowhead-guildrecruitment-v.wowhead-guildrecruitment-dark li {
+	border-bottom: solid 1px #333;
+}
+
+.wowhead-trending-light {
+	background-color: #f0f0f0;
+	-moz-box-shadow: 0 1px 1px #999;
+	-webkit-box-shadow: 0 1px 1px #999;
+	color: #141414;
+}
+
+.wowhead-trending-light a {
+	color: #026;
+}
+
+.wowhead-trending-light a.c {
+	color: #666;
+}
+
+.wowhead-trending-light ul {
+	background: #fff;
+	-moz-box-shadow: 0 1px 1px #ccc inset;
+	-webkit-box-shadow: 0 1px 1px #ccc inset;
+	border: solid 1px #bbb;
+}
+
+.wowhead-trending-light li {
+	border-bottom: solid 1px #ccc;
+}
+
+.wowhead-trending-light h5 {
+	color: #026;
+}
+
+.wowhead-trending-dark {
+	background-color: #242424;
+	-moz-box-shadow: 0 1px 1px #202020;
+	-webkit-box-shadow: 0 1px 1px #202020;
+	color: #f0f0f0;
+}
+
+.wowhead-trending-dark a {
+	color: #ffd100;
+}
+
+.wowhead-trending-dark a.c {
+	color: #aaa;
+}
+
+.wowhead-trending-dark ul {
+	background: #141414;
+	-moz-box-shadow: 0 1px 1px #333 inset;
+	-webkit-box-shadow: 0 1px 1px #333 inset;
+	border: solid 1px #444;
+}
+
+.wowhead-trending-dark li {
+	border-bottom: solid 1px #333;
+}
+
+.wowhead-trending-dark h5 {
+	color: #026;
+}
+
+.wowhead-trending {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 12px;
+}
+
+.wowhead-trending hr {
+	margin: 0 0 10px 0;
+}
+
+.wowhead-trending a {
+	text-decoration: none !important;
+}
+
+.wowhead-trending ul {
+	padding: 10px;
+	list-style-type: none;
+	margin: 0;
+}
+
+.wowhead-trending li {
+	padding: 0 0 10px 0;
+	margin: 0 0 10px 0;
+	line-height: 0;
+	clear: both;
+	overflow: hidden;
+}
+
+.wowhead-trending li.last {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.wowhead-trending li>a {
+	float: left;
+	display: block;
+	margin-right: 10px;
+}
+
+.wowhead-trending h3 {
+	font-size: 16px;
+	font-weight: bold;
+	margin: 0 0 10px 0;
+}
+
+.wowhead-trending h5 {
+	font-weight: bold;
+	font-size: 12px !important;
+	margin: 0 0 3px 0;
+	padding: 0;
+	font-style: normal;
+	line-height: 1em;
+}
+
+.wowhead-trending h5 a {
+	font-weight: bold;
+	font-style: normal;
+}
+
+.wowhead-trending img {
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.wowhead-trending a.c {
+	margin: 4px 10px 0 0;
+	padding: 0 0 0 20px;
+	background: url(//static.wowhead.com/images/blog/trendwidget-icons.png)
+		no-repeat;
+	background-position: 0 -15px;
+	height: 15px;
+	line-height: 15px;
+}

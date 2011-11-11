@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+	<!-- DispatcherServlet Context: defines this servlet's request-processing 
+		infrastructure -->
+
+	<!-- Enables the Spring MVC @Controller programming model -->
+	
+<mvc:interceptors>
+    <bean id="webContentInterceptor" 
+         class="org.springframework.web.servlet.mvc.WebContentInterceptor">
+        <property name="cacheSeconds" value="43200"/>
+        <property name="useExpiresHeader" value="true"/>
+        <property name="useCacheControlHeader" value="true"/>
+        <property name="useCacheControlNoStore" value="true"/>
+    </bean>
+</mvc:interceptors>
+
+	<mvc:annotation-driven/>
+	<context:component-scan base-package="fi.nba.europeana"/>
+	
+<bean id="messageSource" class="org.springframework.context.support.ExposedResourceBundleMessageSource">
+	<property name="basename" value="messages"/>
+</bean>
+
+	<!-- Handles HTTP GET requests for /resources/** by efficiently serving 
+		up static resources in the ${webappRoot}/resources directory -->
+	<mvc:resources mapping="/resources/**" location="/resources/" />
+
+	<!-- Resolves views selected for rendering by @Controllers to .jsp resources 
+		in the /WEB-INF/views directory -->
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/views/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+
+	<!--Bean to load properties file -->
+	<bean id="placeholderConfig"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location" value="classpath:config.properties"/>
+	</bean>
+
+	
+	<bean id="searchService"
+		class="fi.nba.europeana.service.impl.EuropeanaSearchServiceImpl"
+		init-method="init">
+		<property name="servicePath" value="${conf.servicePath}" />
+		<property name="fullView" value="${conf.fullView}" />
+		<property name="suffix" value="${conf.suffix}" />
+		<property name="hostname" value="${conf.hostname}" />
+		<property name="fullItemNodeMapper">
+			<bean class="fi.nba.europeana.util.EuropeanaResultNodeMapper"/>
+		</property>
+		<!-- These use an included propertyeditor to convert strings to xpathexpressions
+		I wonder why spring doesn't provide one by default? -->
+		<property name="resultXPath" value="${conf.xpath.result}" />
+	</bean>
+	
+	<bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+  <property name="customEditors">
+    <map>
+      <entry key="java.util.List" value="org.springframework.beans.propertyeditors.CommaDelimitedListEditor"/>
+      <entry key="org.springframework.xml.xpath.XPathExpression" value="org.springframework.beans.propertyeditors.XPathExpressionEditor"/>
+    </map>
+  </property>
+</bean>
+    
+</beans>

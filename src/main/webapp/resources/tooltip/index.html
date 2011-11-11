@@ -1,0 +1,142 @@
+<!doctype html> 
+<html>
+<head>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery.tmpl.js"></script>
+<script type="text/javascript" src="europeanaTooltip.js"></script>
+
+<link rel="stylesheet" type="text/css" href="basic.css" media="screen" />
+
+<link rel="stylesheet" type="text/css" href="reset-fonts-grids.css"
+	media="all" />
+
+<link rel="stylesheet" type="text/css" href="resume.css" media="all" />
+
+</head>
+<body>
+
+	<div id="doc2" class="yui-t7">
+		<div id="inner">
+			<div id="hd">
+
+				<div class="yui-gc">
+
+					<div class="yui-u first">
+
+						<h1>Lorem Ipsum Dorus</h1>
+						<h2>Dolor sit amet</h2>
+					</div>
+
+				</div>
+
+			</div>
+
+
+
+			<div id="bd">
+
+				<div id="yui-main">
+
+					<div class="yui-b">
+
+						<div class="yui-gf first">
+
+							<div class="yui-u first">
+
+								<h2>Nonumy</h2>
+
+							</div>
+
+							<div class="yui-u">
+
+								<p class="enlarge">
+									Lorem ipsum dorum. Veri volumus <a href="http://europeana.eu/portal/record/09405a/4216EE96987C0FBDF2330916F3D2C519E5C72283.html?start=3&pageId=brd&query=venus&view=table&startPage=1" class="tooltip">Venus and Cupid Surprised by the Sun</a>, aliquip erroribus
+									appellantur est ea, ad falli persequeris eum.
+								</p>
+
+							</div>
+
+						</div>
+
+						<div class="yui-gf">
+
+							<div class="yui-u first">
+
+								<h2>Quis omnis</h2>
+
+							</div>
+
+							<div class="yui-u">
+
+								<p class="enlarge">
+
+									Fierent phaedrum, ei <a href="http://europeana.eu/portal/record/92034/DCC86203EA8D9905DF26AFA8646662B1E65D9359.html?start=18&pageId=brd&query=van+gogh&qf=TYPE:IMAGE&view=table&startPage=13" class="tooltip">Portrair of an old man</a>
+									eos nullam phaedrum. Veri volumus sit id, aliquip erroribus
+									appellantur est ea, ad falli persequeris eum.
+
+								</p>
+
+							</div>
+
+						</div>
+
+						<div class="yui-gf last">
+
+							<div class="yui-u first">
+
+								<h2>Sit mandamus</h2>
+
+							</div>
+
+							<div class="yui-u">
+
+								<p class="enlarge">
+									Mel alii dignissim et. Case dicunt ea est. Munere constituto ea <a href="http://europeana.eu/portal/record/92034/D0FF4A3C6D1828A9BF07F75DFA3AE78F43CDF129.html?start=26&pageId=brd&query=van+gogh&qf=TYPE:IMAGE&view=table&startPage=25" class="tooltip">The cottage</a>. Referrentur has an, id brute maiestatis conclusionemque per.
+								</p>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+
+
+			<div id="ft">
+
+				<p>Lorem ipsum dolor sit amet, eum nobis omittam et, eum facete
+					mediocrem id. Vero admodum sea ei. Zril aperiam diceret ius no,
+					facilisi petentium accusamus te sed, vim aperiam quaeque ei. Ut
+					animal sententiae mei.</p>
+
+			</div>
+
+		</div>
+
+
+
+
+
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("a.tooltip").europeanaTooltip({
+				precache: true,
+				url: "http://bbprimo.nba.fi:8080/europeana/get.json"
+			});
+		});
+	</script>
+	
+<script id="myTemplate" type="text/x-jquery-tmpl">
+	<div>
+		<h1>${fields["dc:title"]}</h1>
+		<i>${fields["dc:description"]}</i>
+	</div>
+</script>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery-ui.min.js"></script>
+<script type="text/javascript" src="jquery.tmpl.js"></script>
+<script type="text/javascript" src="../../../../localization.js"></script>
+
+<link rel="stylesheet" type="text/css" href="basic.css"
+	media="screen" />
+</head>
+<body>
+	<a href="#" alt="M011_KANTAPUU9429" class="tooltip">Test</a>
+
+<script type="text/javascript">
+
+$(function () {
+	var template = $("#template-tooltip");
+	if (template instanceof $ &&
+	        !template.length) {
+	    template = $(
+	        template.selector
+	    );
+	}
+	
+	var tooltip = {};
+
+	$(".tooltip").mouseover(function(e) {
+			$.getJSON("../../../../get", {id: $(this).attr("alt")}, function(data) {
+				tooltip = $.tmpl(template, data)
+				.css("position", "absolute")
+				.css("width", "320px")
+				.css("left", e.pageX+60)
+				.css("top", e.pageY)
+				.css("visibility", "visible")
+				.appendTo('body');
+			});
+	})
+		
+		.mouseout(function() {
+			tooltip.fadeOut(500);
+		});
+});
+	
+	
+</script>
+<script id="template-tooltip" type="text/x-jquery-tmpl">
+    	<div class="wowhead-tooltip">
+		<div class="thumbnail"
+		style="background-image: url(../../../../image.jpg?docId=${fields.control.recordid}&w=36&h=36); visibility: visible;">
+			<div></div>
+		</div>
+		<table>
+			<tbody>
+				<tr>
+					<td><table style="white-space: nowrap; width: 100%;">
+							<tbody>
+								<tr>
+									<td><b class="q3">${fields.display.title}</b><br>
+									<!--bo-->
+									<table style="width: 100%;">
+									<tbody>
+										<tr>
+											<td>
+												<!--rr-->
+												<span class="q2">${fields.display.description}</span>
+													<br /> 
+													<!-- <span class="q">&quot;${fields.display.description}&quot;</span>-->
+											</td>
+										</tr>
+									</tbody>
+								</table>
+										<table width="100%">
+											<tbody>
+												<tr>
+													<td>${localization['rtype.'+fields.display.type]}</td>
+													<th>${fields.display.lds05}</th>
+												</tr>
+											</tbody>
+										</table>
+										<!--rf-->
+										<span>${localization['field.creationdate']}: ${fields.display.creationdate}</span>
+<br>${localization['field.identifier']}: ${fields.display.identifier}<br><br>
+
+{{if fields.display.subject}}
+<span class="q"><a href="/itemset=-354" class="q">${localization['field.subject']}</a></span>
+<div class="q0 indent">
+									{{each fields.display.subject.split(";")}}
+									{{if $index}}, {{/if}}
+									<span><a href="/items=3&amp;filter=cr=81;crs=3;crv=0"
+										>${$value}</a></span>
+									{{/each}}
+</div>
+{{/if}}
+</td>
+								</tr>
+							</tbody> 
+						</table>
+					</td>
+					<th style="background-position: 100% 0%;"></th>
+				</tr>
+				<tr>
+					<th style="background-position: 0% 100%;"></th>
+					<th style="background-position: 100% 100%;"></th>
+				</tr>
+			</tbody>
+		</table>
+		<div class="wowhead-tooltip-powered" style="display: none;"></div>
+	</div>
+</script>
+</body>
+</html>
